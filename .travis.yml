@@ -15,4 +15,3 @@ branches:
   only:
     - master
 script: rspec
-cache: bundler
