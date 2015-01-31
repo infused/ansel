@@ -16,9 +16,22 @@ Copyright (c) 2006-2015 Keith Morrison <mailto:keithm@infused.org>, <http://www.
 
 ## Compatibility
 
-ANSEL is compatible with Ruby 1.9.2 and up
+ANSEL is [tested](https://travis-ci.org/infused/ansel) to be compatible with the following Rubies:
 
-If you need ANSEL convesion in Ruby 1.8.7 or below, see my [ansel_iconv](http://github.com/infused/ansel_iconv) project.
+* 1.9.2
+* 1.9.3
+* 2.0.0
+* 2.1.0
+* 2.1.1
+* 2.1.2
+* 2.1.3
+* 2.1.4
+* 2.1.5
+* 2.2.0
+* jruby 1.7+
+
+
+If you need ANSEL convesion in Ruby 1.8, see my [ansel_iconv](http://github.com/infused/ansel_iconv) project.
 
 ## Installation
 
