@@ -12,7 +12,7 @@ ANSEL provides character set conversion from ANSEL to UTF-8
 Copyright (c) 2006-2015 Keith Morrison <mailto:keithm@infused.org>, <http://www.infused.org>
 
 - Project page: <http://github.com/infused/ansel>
-- API Documentation: <http://rubydoc.info/github/infused/ansel/frames>
+- API Documentation: <http://rubydoc.info/github/infused/ansel/>
 - Report bugs: <http://github.com/infused/ansel/issues>
 - Questions? Email [keithm@infused.org](mailto:keithm@infused.org?subject=ANSE)
   with ANSEL in the subject line
