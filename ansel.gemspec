@@ -9,13 +9,13 @@ Gem::Specification.new do |s|
   s.version = ANSEL::VERSION
   s.authors = ["Keith Morrison"]
   s.email = 'keithm@infused.org'
-  s.homepage = 'http://github.com/infused/ansel_iconv'
+  s.homepage = 'http://github.com/infused/ansel'
   s.summary = 'Convert ANSEL encoded text'
-  s.description = 'Convert ANSEL encoded text to any other encoding available to Iconv'
+  s.description = 'Convert ANSEL encoded text to UTF-8'
 
   s.rdoc_options = ['--charset=UTF-8']
   s.extra_rdoc_files = ['README.md', 'CHANGELOG.md', 'MIT-LICENSE']
-  s.files = Dir['[A-Z]*', '{lib,test}/**/*', 'ansel_iconv.gemspec']
+  s.files = Dir['[A-Z]*', '{lib,test}/**/*', 'ansel.gemspec']
   s.test_files = Dir.glob('test/**/*_test.rb')
   s.require_paths = ['lib']
 
