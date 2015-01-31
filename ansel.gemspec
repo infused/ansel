@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors = ["Keith Morrison"]
   s.email = 'keithm@infused.org'
   s.homepage = 'http://github.com/infused/ansel'
-  s.summary = 'Convert ANSEL encoded text'
+  s.summary = 'Convert ANSEL encoded text to UTF-8'
   s.description = 'Convert ANSEL encoded text to UTF-8'
 
   s.rdoc_options = ['--charset=UTF-8']
