@@ -1,3 +1,7 @@
+## 2.0.0
+
+- Remove Iconv dependency (requires Ruby 1.9+)
+
 ## 1.1.6
 
 - Remove dependency on activesupport
@@ -32,5 +36,3 @@
 ## 1.0.0
 
 - Initial public release
-
-
