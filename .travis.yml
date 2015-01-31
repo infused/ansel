@@ -9,6 +9,8 @@ rvm:
   - 2.1.4
   - 2.1.5
   - 2.2.0
+  - jruby-19mode
+  - jruby-head
 branches:
   only:
     - master
