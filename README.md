@@ -1,5 +1,7 @@
 # ANSEL
 
+[![Code Quality](http://img.shields.io/codeclimate/github/infused/ansel.svg?style=flat)](https://codeclimate.com/github/infused/ansel)
+
 ANSEL provides character set conversion from ANSEL to UTF-8
 
 Copyright (c) 2006-2015 Keith Morrison <mailto:keithm@infused.org>, <http://www.infused.org>
