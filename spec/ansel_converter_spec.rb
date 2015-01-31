@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-describe ANSEL::Iconv do
+describe ANSEL::Converter do
   before do
     @ansel = ANSEL::Converter.new
   end

@@ -3,7 +3,7 @@
 $:.unshift(File.dirname(__FILE__) + '/../lib/')
 require 'rubygems'
 require 'rspec'
-require 'ansel_iconv'
+require 'ansel'
 
 RSpec.configure do |config|
 

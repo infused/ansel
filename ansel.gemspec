@@ -2,11 +2,11 @@
 
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
-require 'ansel_iconv/version'
+require 'ansel/version'
 
 Gem::Specification.new do |s|
-  s.name = 'ansel_iconv'
-  s.version = ANSEL::Iconv::VERSION
+  s.name = 'ansel'
+  s.version = ANSEL::VERSION
   s.authors = ["Keith Morrison"]
   s.email = 'keithm@infused.org'
   s.homepage = 'http://github.com/infused/ansel_iconv'
