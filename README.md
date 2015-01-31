@@ -1,42 +1,34 @@
-# ANSEL::Iconv
+# ANSEL
 
-ANSEL::Iconv is a wrapper for Iconv that adds ANSEL character set conversion.
+ANSEL provides character set conversion from ANSEL to UTF-8
 
-Copyright (c) 2006-2012 Keith Morrison <mailto:keithm@infused.org>, <http://www.infused.org>
+Copyright (c) 2006-2015 Keith Morrison <mailto:keithm@infused.org>, <http://www.infused.org>
 
-- Project page: <http://github.com/infused/ansel_iconv>
-- API Documentation: <http://rubydoc.info/github/infused/ansel_iconv/frames>
-- Report bugs: <http://github.com/infused/ansel_iconv/issues>
-- Questions? Email [keithm@infused.org](mailto:keithm@infused.org?subject=ANSEL::Iconv)
-  with ANSEL::Iconv in the subject line
+- Project page: <http://github.com/infused/ansel>
+- API Documentation: <http://rubydoc.info/github/infused/ansel/frames>
+- Report bugs: <http://github.com/infused/ansel/issues>
+- Questions? Email [keithm@infused.org](mailto:keithm@infused.org?subject=ANSE)
+  with ANSEL in the subject line
 
 ## Compatibility
 
-ANSEL::Iconv is compatible with Ruby 1.8.6, 1.8.7, 1.9.2, and 1.9.3. Ruby must
-be compiled with iconv support.
+ANSEL is compatible with Ruby 1.9.2 and up
+
+If you need ANSEL convesion in Ruby 1.8.7 or below, see my [ansel_iconv](http://github.com/infused/ansel_iconv) project.
 
 ## Installation
 
-    gem install ansel_iconv
+    gem install ansel
 
 ## Basic Usage
 
-Conversion from ANSEL to any other encoding is fully supported, but you cannot
-convert to ANSEL from another encoding. Two-way encoding may be added
-in the future.
+Conversion from ANSEL to UTF-8 is fully supported.
 
-    require 'ansel_iconv'
+    require 'ansel'
 
-    # convert ANSEL to UTF-8
-    converter = ANSEL::Iconv.new 'UTF-8'
-    converter.iconv("\xB9\x004.59") # => "£4.59"
+    converter = ANSEL::Converter.new
+    converter.convert("\xB9\x004.59") # => "£4.59"
 
-You can use ANSEL::Iconv as a replacement for the built-in Iconv, because
-non-ANSEL conversions are simply passed through to Iconv.
-
-    # convert UTF-8 to UTF-16
-    converter = ANSEL::Iconv.new 'UTF-16', 'UTF-8'
-    converter.iconv("£4.59") # => "\376\377\000\243\0004\000.\0005\0009"
 
 ## About the ANSEL character set
 
@@ -50,7 +42,7 @@ standard.
 
 ## LICENSE:
 
-Copyright (c) 2006-2014 Keith Morrison <keithm@infused.org>
+Copyright (c) 2006-2015 Keith Morrison <keithm@infused.org>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
