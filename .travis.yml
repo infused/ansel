@@ -18,4 +18,4 @@ script: bundle exec rspec
 addons:
   code_climate:
     repo_token: 3dd24352e8b43b740fbd7af43228206759842fafd86ce253b1062d213338a1a2
-gemfile: gemfile: Gemfile.travis
+gemfile: Gemfile.travis
