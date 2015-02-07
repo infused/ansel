@@ -55,7 +55,7 @@ Conversion from ANSEL to UTF-8 is fully supported.
 [ANSI/NISO
 Z39.47](http://www.niso.org/kst/reports/standards?step=2&gid%3Austring%3Aiso-8859-1=&project_key%3Austring%3Aiso-8859-1=0b5d2bd7b690b60fcc75cde9256ed9f9e526e531),
 also known as ANSEL, is a character set encoding used primarily for
-bibliographic and genealogical data. It is one of the official character
+bibliographic and genealogical data. It is used in library systems worldwide and is one of the official character
 encodings supported by the [Gedcom
 5.5](http://homepages.rootsweb.ancestry.com/~pmcbride/gedcom/55gctoc.htm)
 standard.
