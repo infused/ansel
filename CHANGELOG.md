@@ -1,3 +1,7 @@
+## 2.0.1
+
+- Explicitly require Ruby's StringScanner class
+
 ## 2.0.0
 
 - Remove Iconv dependency (requires Ruby 1.9+)
