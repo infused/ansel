@@ -9,8 +9,8 @@ rvm:
   - 2.1.4
   - 2.1.5
   - 2.2.0
+  - 2.3.0
   - jruby-19mode
-  - jruby-head
 branches:
   only:
     - master
@@ -19,3 +19,5 @@ addons:
   code_climate:
     repo_token: 3dd24352e8b43b740fbd7af43228206759842fafd86ce253b1062d213338a1a2
 gemfile: Gemfile.travis
+sudo: false
+language: ruby
