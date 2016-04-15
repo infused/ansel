@@ -35,7 +35,7 @@ module ANSEL
             hex_key = bytes.join('+')
             if @ansi_to_utf16_map.has_key?(hex_key)
               output << utf16_to_utf8(@ansi_to_utf16_map[hex_key])
-              n.times {scanner.get_byte}
+              n.times { scanner.get_byte }
               break
             end
           end
