@@ -9,7 +9,7 @@
 
 ANSEL provides character set conversion from ANSEL to UTF-8
 
-Copyright (c) 2006-2015 Keith Morrison <mailto:keithm@infused.org>, <http://www.infused.org>
+Copyright (c) 2006-2016 Keith Morrison <mailto:keithm@infused.org>, <http://www.infused.org>
 
 - Project page: <http://github.com/infused/ansel>
 - API Documentation: <http://rubydoc.info/github/infused/ansel/>
@@ -21,18 +21,12 @@ Copyright (c) 2006-2015 Keith Morrison <mailto:keithm@infused.org>, <http://www.
 
 ANSEL is [tested](https://travis-ci.org/infused/ansel) to be compatible with the following Rubies:
 
-* 1.9.2
-* 1.9.3
+* 1.9.2, 1.9.3
 * 2.0.0
-* 2.1.0
-* 2.1.1
-* 2.1.2
-* 2.1.3
-* 2.1.4
-* 2.1.5
-* 2.2.0
+* 2.1.0-2.1.5
+* 2.2.0-2.2.4
+* 2.3.0
 * jruby 1.7+
-
 
 If you need ANSEL convesion in Ruby 1.8, see my [ansel_iconv](http://github.com/infused/ansel_iconv) project.
 
@@ -62,7 +56,7 @@ standard.
 
 ## LICENSE:
 
-Copyright (c) 2006-2015 Keith Morrison <keithm@infused.org>
+Copyright (c) 2006-2016 Keith Morrison <keithm@infused.org>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
