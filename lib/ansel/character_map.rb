@@ -2,51 +2,51 @@
 
 module ANSEL
   module CharacterMap
-    @@non_combining = {
+    NON_COMBINING = {
       "ERR" => "\xFF\xFD",      # � - REPLACEMENT CHARACTER
-      "88" => "",               # NON-SORT BEGIN / START OF STRING		                                     
-      "89" => "",               # NON-SORT END / STRING TERMINATOR		                                     
-      "8D" => "",               # JOINER / ZERO WIDTH JOINER		                                           
-      "8E" => "",               # NON-JOINER / ZERO WIDTH NON-JOINER		                                   
-      "A1" => "\x01\x41",       # Ł - UPPERCASE POLISH L / LATIN CAPITAL LETTER L WITH STROKE		           
-      "A2" => "\x00\xD8",       # Ø - UPPERCASE SCANDINAVIAN O / LATIN CAPITAL LETTER O WITH STROKE		     
-      "A3" => "\x01\x10",       # Đ - UPPERCASE D WITH CROSSBAR / LATIN CAPITAL LETTER D WITH STROKE		   
-      "A4" => "\x00\xDE",       # Þ - UPPERCASE ICELANDIC THORN / LATIN CAPITAL LETTER THORN (Icelandic)   
-      "A5" => "\x00\xC6",       # Æ - UPPERCASE DIGRAPH AE / LATIN CAPITAL LIGATURE AE		                 
-      "A6" => "\x01\x52",       # Œ - UPPERCASE DIGRAPH OE / LATIN CAPITAL LIGATURE OE		                 
-      "A7" => "\x02\xB9",       # ʹ - SOFT SIGN, PRIME / MODIFIER LETTER PRIME		                         
-      "A8" => "\x00\xB7",       # · - MIDDLE DOT		                                                       
-      "A9" => "\x26\x6D",       # ♭ - MUSIC FLAT SIGN		                                                   
-      "AA" => "\x00\xAE",       # ® - PATENT MARK / REGISTERED SIGN		                                     
-      "AB" => "\x00\xB1",       # ± - PLUS OR MINUS / PLUS-MINUS SIGN		                                   
-      "AC" => "\x01\xA0",       # Ơ - UPPERCASE O-HOOK / LATIN CAPITAL LETTER O WITH HORN		               
-      "AD" => "\x01\xAF",       # Ư - UPPERCASE U-HOOK / LATIN CAPITAL LETTER U WITH HORN		               
-      "AE" => "\x02\xBC",       # ʼ - ALIF / MODIFIER LETTER APOSTROPHE		                                 
-      "B0" => "\x02\xBB",       # ʻ - AYN / MODIFIER LETTER TURNED COMMA		                               
-      "B1" => "\x01\x42",       # ł - LOWERCASE POLISH L / LATIN SMALL LETTER L WITH STROKE		             
-      "B2" => "\x00\xF8",       # ø - LOWERCASE SCANDINAVIAN O / LATIN SMALL LETTER O WITH STROKE		       
-      "B3" => "\x01\x11",       # đ - LOWERCASE D WITH CROSSBAR / LATIN SMALL LETTER D WITH STROKE		     
-      "B4" => "\x00\xFE",       # þ - LOWERCASE ICELANDIC THORN / LATIN SMALL LETTER THORN (Icelandic)	   
-      "B5" => "\x00\xE6",       # æ - LOWERCASE DIGRAPH AE / LATIN SMALL LIGATURE AE		                   
-      "B6" => "\x01\x53",       # œ - LOWERCASE DIGRAPH OE / LATIN SMALL LIGATURE OE		                   
-      "B7" => "\x02\xBA",       # ʺ - HARD SIGN, DOUBLE PRIME / MODIFIER LETTER DOUBLE PRIME		           
-      "B8" => "\x01\x31",       # ı - LOWERCASE TURKISH I / LATIN SMALL LETTER DOTLESS I		               
-      "B9" => "\x00\xA3",       # £ - BRITISH POUND / POUND SIGN		                                       
-      "BA" => "\x00\xF0",       # ð - LOWERCASE ETH / LATIN SMALL LETTER ETH (Icelandic)		               
-      "BC" => "\x01\xA1",       # ơ - LOWERCASE O-HOOK / LATIN SMALL LETTER O WITH HORN		               
-      "BD" => "\x01\xB0",       # ư - LOWERCASE U-HOOK / LATIN SMALL LETTER U WITH HORN		                 
-      "C0" => "\x00\xB0",       # ° - DEGREE SIGN		                                                       
-      "C1" => "\x21\x13",       # ℓ - SCRIPT SMALL L		                                                   
-      "C2" => "\x21\x17",       # ℗ - SOUND RECORDING COPYRIGHT		                                         
-      "C3" => "\x00\xA9",       # © - COPYRIGHT SIGN		                                                     
-      "C4" => "\x26\x6F",       # ♯ - MUSIC SHARP SIGN		                                                 
-      "C5" => "\x00\xBF",       # ¿ - INVERTED QUESTION MARK		                                           
-      "C6" => "\x00\xA1",       # ¡ - INVERTED EXCLAMATION MARK		                                         
-      "C7" => "\x00\xDF",       # ß - ESZETT SYMBOL		                                                     
-      "C8" => "\x20\xAC"        # € - EURO SIGN                                                          
+      "88" => "",               # NON-SORT BEGIN / START OF STRING
+      "89" => "",               # NON-SORT END / STRING TERMINATOR
+      "8D" => "",               # JOINER / ZERO WIDTH JOINER
+      "8E" => "",               # NON-JOINER / ZERO WIDTH NON-JOINER
+      "A1" => "\x01\x41",       # Ł - UPPERCASE POLISH L / LATIN CAPITAL LETTER L WITH STROKE
+      "A2" => "\x00\xD8",       # Ø - UPPERCASE SCANDINAVIAN O / LATIN CAPITAL LETTER O WITH STROKE
+      "A3" => "\x01\x10",       # Đ - UPPERCASE D WITH CROSSBAR / LATIN CAPITAL LETTER D WITH STROKE
+      "A4" => "\x00\xDE",       # Þ - UPPERCASE ICELANDIC THORN / LATIN CAPITAL LETTER THORN (Icelandic)
+      "A5" => "\x00\xC6",       # Æ - UPPERCASE DIGRAPH AE / LATIN CAPITAL LIGATURE AE
+      "A6" => "\x01\x52",       # Œ - UPPERCASE DIGRAPH OE / LATIN CAPITAL LIGATURE OE
+      "A7" => "\x02\xB9",       # ʹ - SOFT SIGN, PRIME / MODIFIER LETTER PRIME
+      "A8" => "\x00\xB7",       # · - MIDDLE DOT
+      "A9" => "\x26\x6D",       # ♭ - MUSIC FLAT SIGN
+      "AA" => "\x00\xAE",       # ® - PATENT MARK / REGISTERED SIGN
+      "AB" => "\x00\xB1",       # ± - PLUS OR MINUS / PLUS-MINUS SIGN
+      "AC" => "\x01\xA0",       # Ơ - UPPERCASE O-HOOK / LATIN CAPITAL LETTER O WITH HORN
+      "AD" => "\x01\xAF",       # Ư - UPPERCASE U-HOOK / LATIN CAPITAL LETTER U WITH HORN
+      "AE" => "\x02\xBC",       # ʼ - ALIF / MODIFIER LETTER APOSTROPHE
+      "B0" => "\x02\xBB",       # ʻ - AYN / MODIFIER LETTER TURNED COMMA
+      "B1" => "\x01\x42",       # ł - LOWERCASE POLISH L / LATIN SMALL LETTER L WITH STROKE
+      "B2" => "\x00\xF8",       # ø - LOWERCASE SCANDINAVIAN O / LATIN SMALL LETTER O WITH STROKE
+      "B3" => "\x01\x11",       # đ - LOWERCASE D WITH CROSSBAR / LATIN SMALL LETTER D WITH STROKE
+      "B4" => "\x00\xFE",       # þ - LOWERCASE ICELANDIC THORN / LATIN SMALL LETTER THORN (Icelandic)
+      "B5" => "\x00\xE6",       # æ - LOWERCASE DIGRAPH AE / LATIN SMALL LIGATURE AE
+      "B6" => "\x01\x53",       # œ - LOWERCASE DIGRAPH OE / LATIN SMALL LIGATURE OE
+      "B7" => "\x02\xBA",       # ʺ - HARD SIGN, DOUBLE PRIME / MODIFIER LETTER DOUBLE PRIME
+      "B8" => "\x01\x31",       # ı - LOWERCASE TURKISH I / LATIN SMALL LETTER DOTLESS I
+      "B9" => "\x00\xA3",       # £ - BRITISH POUND / POUND SIGN
+      "BA" => "\x00\xF0",       # ð - LOWERCASE ETH / LATIN SMALL LETTER ETH (Icelandic)
+      "BC" => "\x01\xA1",       # ơ - LOWERCASE O-HOOK / LATIN SMALL LETTER O WITH HORN
+      "BD" => "\x01\xB0",       # ư - LOWERCASE U-HOOK / LATIN SMALL LETTER U WITH HORN
+      "C0" => "\x00\xB0",       # ° - DEGREE SIGN
+      "C1" => "\x21\x13",       # ℓ - SCRIPT SMALL L
+      "C2" => "\x21\x17",       # ℗ - SOUND RECORDING COPYRIGHT
+      "C3" => "\x00\xA9",       # © - COPYRIGHT SIGN
+      "C4" => "\x26\x6F",       # ♯ - MUSIC SHARP SIGN
+      "C5" => "\x00\xBF",       # ¿ - INVERTED QUESTION MARK
+      "C6" => "\x00\xA1",       # ¡ - INVERTED EXCLAMATION MARK
+      "C7" => "\x00\xDF",       # ß - ESZETT SYMBOL
+      "C8" => "\x20\xAC"        # € - EURO SIGN
     }
 
-    @@combining = {
+    COMBINING = {
       "E0+41" => "\x1E\xA2",    # Ả - LATIN CAPITAL LETTER A WITH HOOK ABOVE
       "E0+45" => "\x1E\xBA",    # LATIN CAPITAL LETTER E WITH HOOK ABOVE
       "E0+49" => "\x1E\xC8",    # LATIN CAPITAL LETTER I WITH HOOK ABOVE
@@ -75,13 +75,13 @@ module ANSEL
       "E1+55" => "\x00\xD9",    # LATIN CAPITAL LETTER U WITH GRAVE
       "E1+57" => "\x1E\x80",    # LATIN CAPITAL LETTER W WITH GRAVE
       "E1+59" => "\x1E\xF2",    # LATIN CAPITAL LETTER Y WITH GRAVE
-      "E1+61" => "\x00\xE0",    # LATIN SMALL LETTER A WITH GRAVE  
-      "E1+65" => "\x00\xE8",    # LATIN SMALL LETTER E WITH GRAVE  
-      "E1+69" => "\x00\xEC",    # LATIN SMALL LETTER I WITH GRAVE  
-      "E1+6F" => "\x00\xF2",    # LATIN SMALL LETTER O WITH GRAVE  
-      "E1+75" => "\x00\xF9",    # LATIN SMALL LETTER U WITH GRAVE  
-      "E1+77" => "\x1E\x81",    # LATIN SMALL LETTER W WITH GRAVE  
-      "E1+79" => "\x1E\xF3",    # LATIN SMALL LETTER Y WITH GRAVE  
+      "E1+61" => "\x00\xE0",    # LATIN SMALL LETTER A WITH GRAVE
+      "E1+65" => "\x00\xE8",    # LATIN SMALL LETTER E WITH GRAVE
+      "E1+69" => "\x00\xEC",    # LATIN SMALL LETTER I WITH GRAVE
+      "E1+6F" => "\x00\xF2",    # LATIN SMALL LETTER O WITH GRAVE
+      "E1+75" => "\x00\xF9",    # LATIN SMALL LETTER U WITH GRAVE
+      "E1+77" => "\x1E\x81",    # LATIN SMALL LETTER W WITH GRAVE
+      "E1+79" => "\x1E\xF3",    # LATIN SMALL LETTER Y WITH GRAVE
       "E1+E3+41" => "\x1E\xA6", # LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND GRAVE
       "E1+E3+45" => "\x1E\xC0", # LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND GRAVE
       "E1+E3+4F" => "\x1E\xD2", # LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND GRAVE
@@ -564,5 +564,7 @@ module ANSEL
       "FA" => "\xFE\x22",       # COMBINING DOUBLE TILDE LEFT HALF
       "FB" => "\xFE\x23"        # COMBINING DOUBLE TILDE RIGHT HALF
     }
+
+    ANSI_TO_UTF16_MAP = NON_COMBINING.merge(COMBINING)
   end
 end

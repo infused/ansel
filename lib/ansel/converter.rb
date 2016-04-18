@@ -7,7 +7,6 @@ module ANSEL
     def initialize(to_charset = 'UTF-8')
       @to_charset = to_charset
       @encoding_converter = Encoding::Converter.new("UTF-16BE", "UTF-8")
-      @ansi_to_utf16_map = @@non_combining.merge(@@combining)
     end
 
     def utf16_to_utf8(string)
@@ -26,21 +25,21 @@ module ANSEL
         when 0x00..0x7F
           output << byte
         when 0x88..0xC8
-          output << utf16_to_utf8(@ansi_to_utf16_map[char_hex] || @ansi_to_utf16_map['ERR'])
+          output << utf16_to_utf8(ANSI_TO_UTF16_MAP[char_hex] || ANSI_TO_UTF16_MAP['ERR'])
           scanner.get_byte # ignore the next byte
         when 0xE0..0xFB
           [2, 1, 0].each do |n| # try 3 bytes, then 2 bytes, then 1 byte
             bytes = [char_hex]
             scanner.peek(n).each_byte {|b| bytes << b.to_s(16).upcase}
             hex_key = bytes.join('+')
-            if @ansi_to_utf16_map.has_key?(hex_key)
-              output << utf16_to_utf8(@ansi_to_utf16_map[hex_key])
+            if ANSI_TO_UTF16_MAP.has_key?(hex_key)
+              output << utf16_to_utf8(ANSI_TO_UTF16_MAP[hex_key])
               n.times { scanner.get_byte }
               break
             end
           end
         else
-          output << utf16_to_utf8(@ansi_to_utf16_map['ERR'])
+          output << utf16_to_utf8(ANSI_TO_UTF16_MAP['ERR'])
           scanner.get_byte if scanner.get_byte.unpack('C')[0] >= 0xE0 # ignore the next byte
         end
       end
