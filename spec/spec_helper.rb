@@ -1,8 +1,8 @@
 # encoding: ascii-8bit
 
 begin
-  require 'codeclimate-test-reporter'
-  CodeClimate::TestReporter.start
+  require 'simplecov'
+  SimpleCov.start
 rescue LoadError
 end
 

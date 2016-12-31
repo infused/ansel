@@ -7,5 +7,6 @@ group :development, :test do
 end
 
 group :test do
-  gem 'codeclimate-test-reporter', require: false
+  gem 'simplecov', platform: :ruby
+  gem 'codeclimate-test-reporter'
 end
