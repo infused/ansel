@@ -1,27 +1,23 @@
+addons:
+  code_climate:
+    repo_token: 3dd24352e8b43b740fbd7af43228206759842fafd86ce253b1062d213338a1a2
+branches:
+  only:
+    - master
+bundler_args: --without development
+cache: bundler
+gemfile: Gemfile.travis
+language: ruby
 matrix:
   include:
     - rvm: 1.9.3
       gemfile: Gemfile.travis19
-    - rvm: 2.0.0
-      gemfile: Gemfile.travis
-    - rvm: 2.1.10
-      gemfile: Gemfile.travis
-    - rvm: 2.2.6
-      gemfile: Gemfile.travis
-    - rvm: 2.3.3
-      gemfile: Gemfile.travis
-    - rvm: 2.4.0
-      gemfile: Gemfile.travis
-    - rvm: jruby-19mode
-      gemfile: Gemfile.travis
-branches:
-  only:
-    - master
+rvm:
+  - 2.0.0
+  - 2.1.10
+  - 2.2.6
+  - 2.3.3
+  - 2.4.0
+  - jruby-19mode
 script: bundle exec rspec
-addons:
-  code_climate:
-    repo_token: 3dd24352e8b43b740fbd7af43228206759842fafd86ce253b1062d213338a1a2
-gemfile: Gemfile.travis
 sudo: false
-language: ruby
-cache: bundler
