@@ -6,7 +6,7 @@ module ANSEL
 
     def initialize(to_charset = 'UTF-8')
       @to_charset = to_charset
-      @encoding_converter = Encoding::Converter.new("UTF-16BE", "UTF-8")
+      @encoding_converter = Encoding::Converter.new('UTF-16BE', 'UTF-8')
     end
 
     def utf16_to_utf8(string)
@@ -16,7 +16,7 @@ module ANSEL
     def convert(string)
       output = ''
       scanner = StringScanner.new(string)
-      until scanner.eos? do
+      until scanner.eos?
         byte = scanner.get_byte
         char = byte.unpack('C')[0]
         char_hex = char.to_s(16).upcase
@@ -30,13 +30,12 @@ module ANSEL
         when 0xE0..0xFB
           [2, 1, 0].each do |n| # try 3 bytes, then 2 bytes, then 1 byte
             bytes = [char_hex]
-            scanner.peek(n).each_byte {|b| bytes << b.to_s(16).upcase}
+            scanner.peek(n).each_byte { |b| bytes << b.to_s(16).upcase }
             hex_key = bytes.join('+')
-            if ANSI_TO_UTF16_MAP.has_key?(hex_key)
-              output << utf16_to_utf8(ANSI_TO_UTF16_MAP[hex_key])
-              n.times { scanner.get_byte }
-              break
-            end
+            next unless ANSI_TO_UTF16_MAP.key?(hex_key)
+            output << utf16_to_utf8(ANSI_TO_UTF16_MAP[hex_key])
+            n.times { scanner.get_byte }
+            break
           end
         else
           output << utf16_to_utf8(ANSI_TO_UTF16_MAP['ERR'])
@@ -46,6 +45,5 @@ module ANSEL
 
       output
     end
-
   end
 end
