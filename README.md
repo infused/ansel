@@ -2,10 +2,6 @@
 
 [![Version](http://img.shields.io/gem/v/ansel.svg?style=flat)](https://rubygems.org/gems/ansel)
 [![Build Status](http://img.shields.io/travis/infused/ansel/master.svg?style=flat)](http://travis-ci.org/infused/ansel)
-[![Code Quality](http://img.shields.io/codeclimate/github/infused/ansel.svg?style=flat)](https://codeclimate.com/github/infused/ansel)
-[![Test Coverage](http://img.shields.io/codeclimate/coverage/github/infused/ansel.svg?style=flat)](https://codeclimate.com/github/infused/ansel)
-[![Dependency Status](http://img.shields.io/gemnasium/infused/ansel.svg?style=flat)](https://gemnasium.com/infused/ansel)
-
 
 ANSEL provides character set conversion from ANSEL to UTF-8
 
@@ -14,7 +10,7 @@ Copyright (c) 2006-2018 Keith Morrison <mailto:keithm@infused.org>, <http://www.
 - Project page: <http://github.com/infused/ansel>
 - API Documentation: <http://rubydoc.info/github/infused/ansel/>
 - Report bugs: <http://github.com/infused/ansel/issues>
-- Questions? Email [keithm@infused.org](mailto:keithm@infused.org?subject=ANSE)
+- Questions? Email [keithm@infused.org](mailto:keithm@infused.org?subject=ANSEL)
   with ANSEL in the subject line
 
 ## Compatibility

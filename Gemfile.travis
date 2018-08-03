@@ -5,8 +5,3 @@ gemspec
 group :development, :test do
   gem 'rspec'
 end
-
-group :test do
-  gem 'simplecov', platform: :ruby
-  gem 'codeclimate-test-reporter'
-end
