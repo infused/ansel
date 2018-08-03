@@ -3,6 +3,7 @@
 [![Version](http://img.shields.io/gem/v/ansel.svg?style=flat)](https://rubygems.org/gems/ansel)
 [![Build Status](http://img.shields.io/travis/infused/ansel/master.svg?style=flat)](http://travis-ci.org/infused/ansel)
 [![Total Downloads](https://img.shields.io/gem/dt/ansel.svg)](https://rubygems.org/gems/ansel/)
+[![License](https://img.shields.io/github/license/infused/ansel.svg)](https://github.com/infused/ansel)
 
 ANSEL provides character set conversion from ANSEL to UTF-8
 
