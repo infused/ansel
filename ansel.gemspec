@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = 'Convert ANSEL encoded text to UTF-8'
 
   s.rdoc_options = ['--charset=UTF-8']
-  s.extra_rdoc_files = ['README.md', 'CHANGELOG.md', 'MIT-LICENSE']
+  s.extra_rdoc_files = ['README.md', 'CHANGELOG.md', 'LICENSE']
   s.files = Dir['[A-Z]*', '{lib,test}/**/*', 'ansel.gemspec']
   s.test_files = Dir.glob('test/**/*_test.rb')
   s.require_paths = ['lib']
