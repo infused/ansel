@@ -7,7 +7,7 @@
 
 ANSEL provides character set conversion from ANSEL to UTF-8
 
-Copyright (c) 2006-2018 Keith Morrison <mailto:keithm@infused.org>, <http://www.infused.org>
+Copyright (c) 2006-2019 Keith Morrison <mailto:keithm@infused.org>, <http://www.infused.org>
 
 - Project page: <http://github.com/infused/ansel>
 - API Documentation: <http://rubydoc.info/github/infused/ansel/>
@@ -56,7 +56,7 @@ standard.
 
 ## LICENSE:
 
-Copyright (c) 2006-2018 Keith Morrison <keithm@infused.org>
+Copyright (c) 2006-2019 8Keith Morrison <keithm@infused.org>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
