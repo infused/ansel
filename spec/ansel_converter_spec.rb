@@ -71,6 +71,9 @@ describe ANSEL::Converter do
       expect(@ansel.convert("\xF2\xE3\x41")).to eq 'Ậ'.force_encoding('utf-8')
       expect(@ansel.convert("\xF2\x79")).to eq 'ỵ'.force_encoding('utf-8')
       expect(@ansel.convert("\xF2")).to eq '̣'.force_encoding('utf-8')
+
+      # Specific issues
+      expect(@ansel.convert("\x4D\x65\x6C\xB2\x79")).to eq 'Meløy'.force_encoding('utf-8')
     end
 
     it 'converts full text correctly' do

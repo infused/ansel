@@ -26,7 +26,7 @@ module ANSEL
           output << byte
         when 0x88..0xC8
           output << utf16_to_utf8(ANSI_TO_UTF16_MAP[char_hex] || ANSI_TO_UTF16_MAP['ERR'])
-          scanner.get_byte # ignore the next byte
+          last_byte = scanner.get_byte if scanner.check(/\00/)
         when 0xE0..0xFB
           [2, 1, 0].each do |n| # try 3 bytes, then 2 bytes, then 1 byte
             bytes = [char_hex]
