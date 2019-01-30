@@ -1,3 +1,7 @@
+## 2.0.2
+
+- Fix issue with some non-combining characters followed by a valid character
+
 ## 2.0.1
 
 - Explicitly require Ruby's StringScanner class
