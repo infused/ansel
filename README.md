@@ -26,6 +26,7 @@ ANSEL is [tested](https://travis-ci.org/infused/ansel) to be compatible with the
 * 2.3.x
 * 2.4.x
 * 2.5.x
+* 2.6.x
 * jruby 1.7+
 
 If you need ANSEL convesion in Ruby 1.8, see my [ansel_iconv](http://github.com/infused/ansel_iconv) project.
