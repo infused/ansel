@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gemspec
 
 group :development, :test do
-  gem 'rubocop'
   gem 'rspec'
+  gem 'rubocop'
+  gem 'rubocop-performance'
+  gem 'rubocop-rspec'
 end

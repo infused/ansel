@@ -1,13 +1,13 @@
 # encoding: ascii-8bit
 
-lib = File.expand_path('../lib/', __FILE__)
-$:.unshift lib unless $:.include?(lib)
+lib = File.expand_path('lib', __dir__)
+$LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
 require 'ansel/version'
 
 Gem::Specification.new do |s|
   s.name = 'ansel'
   s.version = ANSEL::VERSION
-  s.authors = ["Keith Morrison"]
+  s.authors = ['Keith Morrison']
   s.email = 'keithm@infused.org'
   s.homepage = 'http://github.com/infused/ansel'
   s.summary = 'Convert ANSEL encoded text to UTF-8'

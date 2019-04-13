@@ -33,6 +33,7 @@ module ANSEL
             scanner.peek(n).each_byte { |b| bytes << b.to_s(16).upcase }
             hex_key = bytes.join('+')
             next unless ANSI_TO_UTF16_MAP.key?(hex_key)
+
             output << utf16_to_utf8(ANSI_TO_UTF16_MAP[hex_key])
             n.times { scanner.get_byte }
             break

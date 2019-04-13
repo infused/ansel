@@ -1,8 +1,9 @@
-AllCops:
-  Exclude:
-    - db/schema.rb
+require:
+  - rubocop-rspec
+  - rubocop-performance
 
 Layout/AlignParameters:
+  Enabled: true
   EnforcedStyle: with_fixed_indentation
 
 Layout/CaseIndentation:
@@ -18,11 +19,15 @@ Layout/EndAlignment:
   Enabled: true
   EnforcedStyleAlignWith: start_of_line
 
+Layout/IndentArray:
+  EnforcedStyle: consistent
+
 Layout/IndentHash:
   EnforcedStyle: consistent
 
 Layout/MultilineHashBraceLayout:
   Enabled: true
+  EnforcedStyle: symmetrical
 
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
@@ -55,7 +60,8 @@ Metrics/BlockLength:
   CountComments: false
   Enabled: true
   Exclude:
-    - "**/*_spec.rb"
+    - spec/**/*_spec.rb
+  Max: 100
 
 Metrics/ClassLength:
   Enabled: false
@@ -78,16 +84,59 @@ Metrics/PerceivedComplexity:
 Naming/FileName:
   Enabled: false
 
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
+
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/DescribeClass:
+  Exclude:
+    - spec/requests/**/*_spec.rb
+
+RSpec/DescribedClass:
+  Enabled: false
+
+RSpec/DescribeMethod:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 25
+  Exclude:
+    - spec/workers/**/*_spec.rb
+
+RSpec/ImplicitSubject:
+  Enabled: false
+
+RSpec/LetSetup:
+  Enabled: false
+
+RSpec/MessageSpies:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Max: 5
+
+RSpec/NotToNot:
+  EnforcedStyle: to_not
+
+Security/YAMLLoad:
+  Exclude:
+    - app/models/entity.rb
+
 Style/Alias:
+  Enabled: false
+
+Style/AsciiComments:
   Enabled: false
 
 Style/ClassAndModuleChildren:
   Enabled: false
 
 Style/Documentation:
-  Enabled: false
-
-Layout/EmptyLinesAroundBlockBody:
   Enabled: false
 
 Style/EmptyMethod:
