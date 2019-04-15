@@ -1,7 +1,7 @@
 # encoding: ascii-8bit
 
-lib = File.expand_path('lib', __dir__)
-$LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
+lib = File.expand_path('../lib/', __FILE__)
+$LOAD_PATH.unshift lib unless $:.include?(lib)
 require 'ansel/version'
 
 Gem::Specification.new do |s|
