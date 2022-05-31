@@ -1,13 +1,11 @@
 # ANSEL
 
 [![Version](http://img.shields.io/gem/v/ansel.svg?style=flat)](https://rubygems.org/gems/ansel)
-[![Build Status](http://img.shields.io/travis/infused/ansel/master.svg?style=flat)](http://travis-ci.com/infused/ansel)
+[![Build Status](https://github.com/infused/ansel/actions/workflows/build.yml/badge.svg)](https://github.com/infused/ansel/actions/workflows/build.yml)
 [![Total Downloads](https://img.shields.io/gem/dt/ansel.svg)](https://rubygems.org/gems/ansel/)
 [![License](https://img.shields.io/github/license/infused/ansel.svg)](https://github.com/infused/ansel)
 
 ANSEL provides character set conversion from ANSEL to UTF-8
-
-Copyright (c) 2006-2020 Keith Morrison <mailto:keithm@infused.org>, <http://www.infused.org>
 
 - Project page: <http://github.com/infused/ansel>
 - API Documentation: <http://rubydoc.info/github/infused/ansel/>
@@ -17,17 +15,15 @@ Copyright (c) 2006-2020 Keith Morrison <mailto:keithm@infused.org>, <http://www.
 
 ## Compatibility
 
-ANSEL is [tested](https://travis-ci.org/infused/ansel) to be compatible with the following Rubies:
+ANSEL is tested to be compatible with the following Rubies:
 
-* 1.9.2, 1.9.3
-* 2.0.x
-* 2.1.x
 * 2.2.x
 * 2.3.x
 * 2.4.x
 * 2.5.x
 * 2.7.x
-* jruby 1.7+
+* 3.0.x
+* 3.1.x
 
 If you need ANSEL conversion in Ruby 1.8, see my [ansel_iconv](http://github.com/infused/ansel_iconv) project.
 
@@ -55,9 +51,9 @@ encodings supported by the [Gedcom
 5.5](http://homepages.rootsweb.ancestry.com/~pmcbride/gedcom/55gctoc.htm)
 standard.
 
-## LICENSE:
+## LICENSE
 
-Copyright (c) 2006-2020 Keith Morrison <keithm@infused.org>
+Copyright (c) 2006-2022 Keith Morrison <keithm@infused.org>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
