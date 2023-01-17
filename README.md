@@ -15,7 +15,7 @@ ANSEL provides character set conversion from ANSEL to UTF-8
 
 ## Compatibility
 
-ANSEL is tested to be compatible with the following Rubies:
+ANSEL is compatible with the following Rubies:
 
 * 2.2.x
 * 2.3.x
@@ -24,6 +24,7 @@ ANSEL is tested to be compatible with the following Rubies:
 * 2.7.x
 * 3.0.x
 * 3.1.x
+* 3.2.x
 
 If you need ANSEL conversion in Ruby 1.8, see my [ansel_iconv](http://github.com/infused/ansel_iconv) project.
 
@@ -53,7 +54,7 @@ standard.
 
 ## LICENSE
 
-Copyright (c) 2006-2022 Keith Morrison <keithm@infused.org>
+Copyright (c) 2006-2023 Keith Morrison <keithm@infused.org>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
