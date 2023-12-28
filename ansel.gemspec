@@ -1,7 +1,7 @@
 # encoding: ascii-8bit
 
-lib = File.expand_path('../lib/', __FILE__)
-$LOAD_PATH.unshift lib unless $:.include?(lib)
+lib = File.expand_path('lib/', __dir__)
+$LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
 require 'ansel/version'
 
 Gem::Specification.new do |s|
@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.homepage = 'http://github.com/infused/ansel'
   s.summary = 'Convert ANSEL encoded text to UTF-8'
   s.description = 'Convert ANSEL encoded text to UTF-8'
+  s.license = 'MIT'
 
   s.rdoc_options = ['--charset=UTF-8']
   s.extra_rdoc_files = ['README.md', 'CHANGELOG.md', 'LICENSE']
@@ -19,4 +20,5 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.required_rubygems_version = '>= 1.3.0'
+  s.required_ruby_version = '>= 3.1.0'
 end

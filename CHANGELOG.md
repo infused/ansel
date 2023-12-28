@@ -1,3 +1,7 @@
+## 3.0.0
+
+- Drop support for Rubies older than 3.1
+
 ## 2.0.2
 
 - Fix issue with some non-combining characters followed by a valid character

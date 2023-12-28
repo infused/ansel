@@ -18,7 +18,7 @@ module ANSEL
       scanner = StringScanner.new(string)
       until scanner.eos?
         byte = scanner.get_byte
-        char = byte.unpack('C')[0]
+        char = byte.unpack1('C')
         char_hex = char.to_s(16).upcase
 
         case char
@@ -40,7 +40,7 @@ module ANSEL
           end
         else
           output << utf16_to_utf8(ANSI_TO_UTF16_MAP['ERR'])
-          scanner.get_byte if scanner.get_byte.unpack('C')[0] >= 0xE0 # ignore the next byte
+          scanner.get_byte if scanner.get_byte.unpack1('C') >= 0xE0 # ignore the next byte
         end
       end
 
