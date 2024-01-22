@@ -2,10 +2,16 @@ require:
   - rubocop-rspec
   - rubocop-performance
 
+AllCops:
+  NewCops: enable
+
 Gemspec/RequiredRubyVersion:
   Enabled: false
 
 Metrics/AbcSize:
+  Enabled: false
+
+Metrics/CollectionLiteralLength:
   Enabled: false
 
 Metrics/CyclomaticComplexity:
@@ -19,6 +25,9 @@ Metrics/ModuleLength:
 
 Metrics/PerceivedComplexity:
   Max: 10
+
+Performance/CollectionLiteralInLoop:
+  Enabled: false
 
 RSpec/ExampleLength:
   Enabled: false
